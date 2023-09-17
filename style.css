@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: #fef6e4;
+    box-shadow: #fff;
+}
+
+.nav-link {
+    color: #001858;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #fef6e4;
+    background-color: #001858;
+}
