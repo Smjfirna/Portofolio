@@ -5,11 +5,11 @@
 }
 
 .navbar {
-    background-color: #fffffe;
+    background-color: #0f0e17;
 }
 
 .nav-link {
-    color: #094067;
+    color: #fffffe;
     font-size: 1rem;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
@@ -19,23 +19,23 @@
 }
 
 .nav-link:hover {
-    color: #094067;
+    color: #fffffe;
     background-color: #90b4ce;
 }
 .Home{
     padding: 4rem 0;
-    background-color: #fffffe;
+    background-color: #0f0e17;
 }
 .Home h1{
     font-size: 40px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #094067;
+    color: #fffffe;
     font-weight: bold;
 }
 .Home h3{
     font-size: 30px;
     font-family: Arial, Helvetica, sans-serif;
-    color: #094067;
+    color: #fffffe;
 }
 .Home .button1 {
     padding: 17px 40px;
