@@ -37,7 +37,7 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #094067;
 }
-.Home .button1 {
+.Home button1 {
     padding: 17px 40px;
     border-radius: 10px;
     border: 0;
@@ -49,11 +49,11 @@
     color: hsl(0, 0%, 100%);
 }
    
-.Home .button1:hover {
+.Home button1:hover {
     box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
 }
    
-.Home .button1:active {
+.Home button1:active {
     background-color: rgb(255, 56, 86);
     /*50, 168, 80*/
     box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
