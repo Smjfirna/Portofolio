@@ -37,26 +37,26 @@
     font-family: Arial, Helvetica, sans-serif;
     color: #094067;
 }
-.Home button1 {
+.Home .button1 {
     padding: 17px 40px;
     border-radius: 10px;
     border: 0;
-    background-color: rgb(255, 56, 86);
+    background-color: #3da9fc;
     letter-spacing: 1.5px;
     font-size: 15px;
     transition: all .3s ease;
-    box-shadow: rgb(201, 46, 70) 0px 10px 0px 0px;
+    box-shadow: #3da9fc;
     color: hsl(0, 0%, 100%);
 }
    
-.Home button1:hover {
-    box-shadow: rgb(201, 46, 70) 0px 7px 0px 0px;
+.Home .button1:hover {
+    box-shadow: #3da9fc;
 }
    
-.Home button1:active {
-    background-color: rgb(255, 56, 86);
+.Home .button1:active {
+    background-color: #3da9fc;
     /*50, 168, 80*/
-    box-shadow: rgb(201, 46, 70) 0px 0px 0px 0px;
+    box-shadow: #3da9fc;
     transform: translateY(5px);
     transition: 200ms;
 }
