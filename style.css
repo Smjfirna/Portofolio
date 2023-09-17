@@ -5,12 +5,12 @@
 }
 
 .navbar {
-    background-color: #fef6e4;
+    background-color: #fffffe;
     box-shadow: #fff;
 }
 
 .nav-link {
-    color: #001858;
+    color: #094067;
     font-size: 1rem;
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
@@ -20,6 +20,6 @@
 }
 
 .nav-link:hover {
-    color: #fef6e4;
-    background-color: #001858;
+    color: #094067;
+    background-color: #90b4ce;
 }
