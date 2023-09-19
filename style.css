@@ -23,15 +23,18 @@
     color: #f2f7f5;
     background-color: #00473e;
 }
-.home {
+
+.home{
     background-color: #f2f7f5;
 }
+
 .home h1{
     font-size: 200px;
     text-align: center;
     font-family: monospace;
     color: #00473e;
 }
+
 .home p{
     text-align: center;
     font-weight: bold;
@@ -39,6 +42,7 @@
     color: #00473e;
     font-size: 18px;
 }
+
 .home .fotohome{
     height: 10cm;
     width: 20cm;
