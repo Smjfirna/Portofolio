@@ -61,10 +61,7 @@
     transition: 200ms;
 }
 .Aboutme{
-    color: #00473e;
-    border: #f2f7f5;
-}
-.Aboutme .custom-container{
+    background-color: #00473e;
     padding: 1cm;
 }
 .Aboutme .box{
