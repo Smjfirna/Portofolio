@@ -60,7 +60,7 @@
     transform: translateY(5px);
     transition: 200ms;
 }
-.Aboutme .col{
+.Aboutme {
     background-color: #00473e;
     box-shadow: #00473e;
     border-color: #f2f7f5;
@@ -70,4 +70,16 @@
     text-align: center;
     color: #f2f7f5;
     font-family: "Monaco", monospace;
+}
+.Aboutme .box {
+    width: 45%; /* Lebar masing-masing kotak */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 5px;
+}
+.Aboutme p{
+    color: #f2f7f5;
+    font-size: 24px;
+    font-family: "Monaco", monospace;
+    text-align: justify;
 }
