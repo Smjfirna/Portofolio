@@ -71,14 +71,11 @@
     color: #f2f7f5;
     font-family: "Monaco", monospace;
 }
-.Aboutme .col {
-    width: 30%; /* Lebar masing-masing kotak */
-    padding: 25px;
-    margin: 5px;
-}
 .Aboutme p{
     color: #f2f7f5;
-    font-size: 10px;
+    font-size: 25px;
     font-family: "Monaco", monospace;
     text-align: justify;
+    margin-right: 5px;
+
 }
