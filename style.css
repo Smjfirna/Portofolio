@@ -72,13 +72,13 @@
     font-family: "Monaco", monospace;
 }
 .Aboutme .box {
-    width: 45%; /* Lebar masing-masing kotak */
+    width: 30%; /* Lebar masing-masing kotak */
     padding: 10px;
     margin: 5px;
 }
 .Aboutme p{
     color: #f2f7f5;
-    font-size: 15px;
+    font-size: 10px;
     font-family: "Monaco", monospace;
     text-align: justify;
 }
