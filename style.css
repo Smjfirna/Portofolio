@@ -64,7 +64,6 @@
     background-color: #00473e;
     padding: 1cm;
 }
-}
 .Aboutme h1{
     font-weight: bold;
     text-align: center;
@@ -77,4 +76,7 @@
     font-family: "Monaco", monospace;
     text-align: justify;
     margin: auto;
+}
+.project{
+    background-color: #00473e;
 }
