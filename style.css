@@ -88,7 +88,7 @@
 } 
 .Aboutme{
     background-color: #00473e;
-    padding: 1cm;
+    padding-left: 1cm;
 }
 .Aboutme h1{
     font-weight: bold;
@@ -105,4 +105,5 @@
 }
 .project{
     background-color: #00473e;
+    padding-left: 1cm;
 }
