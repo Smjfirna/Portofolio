@@ -60,10 +60,9 @@
     transform: translateY(5px);
     transition: 200ms;
 }
-.Aboutme {
-    background-color: #00473e;
-    box-shadow: #00473e;
-    border-color: #f2f7f5;
+.Aboutme .container{
+    color: #00473e;
+    border: #f2f7f5;
 }
 .Aboutme h1{
     font-weight: bold;
