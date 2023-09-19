@@ -27,7 +27,7 @@
     background-color: #f2f7f5;
 }
 .Home h1{
-    font-size: 70px;
+    font-size: 60px;
     font-family: "Monaco", monospace;
     color: #00473e;
     font-weight: bold;
@@ -76,11 +76,5 @@
     font-size: 15px;
     font-family: "Monaco", monospace;
     text-align: justify;
-    margin-right: 5px;
-}
-.Aboutme .row{
-    padding: 10px;
-}
-.Aboutme .col{
-    padding-right: 10px;
+    margin: auto;
 }
