@@ -104,6 +104,15 @@
     margin: auto;
 }
 .project{
-    background-color: #00473e;
+    background-color: #f2f7f5;
     padding-left: 1cm;
+}
+.project h1{
+    font-weight: bold;
+    color: #00473e;
+    font-family: "Monaco", monospace;
+    text-align: left;
+}
+.project .card{
+    background-color: #fffffe;
 }
