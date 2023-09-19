@@ -37,29 +37,55 @@
     font-family: "Monaco", monospace;
     color: #00473e;
 }
-.Home .button1 {
-    padding: 17px 40px;
-    border-radius: 10px;
-    border: 0;
-    background-color: #3da9fc;
-    letter-spacing: 1.5px;
-    font-size: 15px;
-    transition: all .3s ease;
-    box-shadow: #3da9fc;
-    color: hsl(0, 0%, 100%);
+.Home .button1{
+  display: inline-block;
+  padding: 12px 28px;
+  margin: 10px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #00473e;
+  background-image: linear-gradient(to bottom right, #deb061, #faae2b);
+  border: none;
+  border-radius: 40px;
+  box-shadow: 0px 4px 0px #faae2b;
+  transition: all 0.2s ease-in-out;
 }
-   
+
 .Home .button1:hover {
-    box-shadow: #3da9fc;
+  transform: translateY(-2px);
+  box-shadow: 0px 6px 0px #faae2b;
 }
-   
+
 .Home .button1:active {
-    background-color: #3da9fc;
-    /*50, 168, 80*/
-    box-shadow: #3da9fc;
-    transform: translateY(5px);
-    transition: 200ms;
+  transform: translateY(0px);
+  box-shadow: none;
+  background-image: linear-gradient(to bottom right, #faae2b, #deb061);
 }
+
+.Home .button1:before,
+.Home .button1:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+}
+
+.Home .button1:before {
+  top: -3px;
+  left: -3px;
+  border-radius: 40px;
+  border-top: 3px solid #00473e;
+  border-left: 3px solid #00473e;
+}
+
+.Home .button1:after {
+  bottom: -3px;
+  right: -3px;
+  border-radius: 40px;
+  border-bottom: 3px solid #00473e;
+  border-right: 3px solid #00473e;
+} 
 .Aboutme{
     background-color: #00473e;
     padding: 1cm;
