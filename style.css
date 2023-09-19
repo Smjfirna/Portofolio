@@ -60,9 +60,15 @@
     transform: translateY(5px);
     transition: 200ms;
 }
-.Aboutme .container{
+.Aboutme{
     color: #00473e;
     border: #f2f7f5;
+}
+.Aboutme .custom-container{
+    padding: 1cm;
+}
+.Aboutme .box{
+    border: none;
 }
 .Aboutme h1{
     font-weight: bold;
