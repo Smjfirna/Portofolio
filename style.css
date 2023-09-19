@@ -73,13 +73,12 @@
 }
 .Aboutme .box {
     width: 45%; /* Lebar masing-masing kotak */
-    border: 1px solid #ccc;
     padding: 10px;
     margin: 5px;
 }
 .Aboutme p{
     color: #f2f7f5;
-    font-size: 24px;
+    font-size: 15px;
     font-family: "Monaco", monospace;
     text-align: justify;
 }
