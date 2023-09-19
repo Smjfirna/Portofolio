@@ -116,3 +116,23 @@
 .project .card{
     background-color: #fffffe;
 }
+.project .card-title{
+    font-family: "Monaco", monospace;
+    color: #00473e;
+}
+.project .card-text{
+    font-family: "Monaco", monospace;
+    color: #475d5b;
+}
+.project .button1{
+    background-color: #faae2c;
+    color: #00473e;
+}
+.project .button2{
+    background-color: #faae2c;
+    color: #00473e;
+}
+.project .button3{
+    background-color: #faae2c;
+    color: #00473e;
+}
