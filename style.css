@@ -87,8 +87,8 @@
   border-right: 3px solid #00473e;
 }
 .Home .img{
-    width: 400;
-    height: 400;
+    width: 40%;
+    height: auto;
     border: 1cm linear-gradient(to right, #FEAC5E 0%, #C779D0  51%, #FEAC5E  100%);
 }
 .Aboutme{
