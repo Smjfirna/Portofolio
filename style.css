@@ -23,18 +23,15 @@
     color: #f2f7f5;
     background-color: #00473e;
 }
-
-.home{
+.home {
     background-color: #f2f7f5;
 }
-
 .home h1{
     font-size: 200px;
     text-align: center;
     font-family: monospace;
     color: #00473e;
 }
-
 .home p{
     text-align: center;
     font-weight: bold;
@@ -42,10 +39,76 @@
     color: #00473e;
     font-size: 18px;
 }
-
 .home .fotohome{
     height: 10cm;
     width: 20cm;
     padding-left: 15px;
     padding-right: 15px;
+}
+.aboutme {
+    background-color: #00473e;
+    padding-left: 2cm;
+    padding-top: 2cm;
+}
+.aboutme h1{
+    font-size: 40px;
+    font-weight: bold;
+    color: #f2f7f5;
+}
+.aboutme p{
+    color: #f2f7f5;
+    font-family: "Monaco", monospace;
+    font-size: 15px;
+    margin-top: 10px;
+    text-align: justify;
+}
+.project{
+    padding-left: 2cm;
+    padding-top: 1cm;
+    padding-bottom: 1cm;
+    background-color: #00473e;
+}
+.project h1{
+    font-size: 35px;
+    color: #f2f7f5;
+    font-weight: bold;
+    padding-right: 10px;
+}
+.project .card{
+    font-family: "Monaco", monospace;
+    color: #00473e;
+    background-color: aliceblue;
+    padding-left: 1cm;
+    font-size: 15px;
+}
+.project .card-text{
+    color: #00473e;
+
+}
+.project p{
+    font-size: 15px;
+    font-family: "Monaco", monospace;
+    color: #f2f7f5;
+    text-align: justify;
+    padding-right: 10px;
+}
+.contact{
+    background-color: #ffa8ba;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
+    text-align: center;
+}
+.contact h1{
+    font-weight: bold;
+    font-size: 35px;
+}
+.contact p{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: "Monaco", monospace;
+}
+.contact .row1{
+    text-align: center;
+    padding-top: 2cm;
+    padding-bottom: 2cm;
 }
