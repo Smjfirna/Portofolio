@@ -39,12 +39,13 @@
     color: #00473e;
     font-size: 18px;
 }
-/*.home .fotohome{
+.home .full-foto {
     height: 10cm;
     width: 20cm;
-    padding-left: 15px;
-    padding-right: 15px;
-}*/
+    margin-left: 2cm; /* Tambahkan margin kiri sebanyak 2 cm */
+    margin-right: 2cm; /* Tambahkan margin kanan sebanyak 2 cm */
+    display: block; /* Penting untuk membuat margin berfungsi dengan benar */
+}
 .aboutme {
     background-color: #00473e;
     padding-left: 2cm;
