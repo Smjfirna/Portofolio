@@ -25,13 +25,13 @@
 }
 .home {
     background-color: #f2f7f5;
+    padding-top: 1cm;
 }
 .home h1{
     font-size: 200px;
     text-align: center;
     font-family: monospace;
     color: #00473e;
-    text-shadow: #faae2b;
 }
 .home p{
     text-align: center;
@@ -42,12 +42,14 @@
 }
 .home .full-foto {
     height: 10cm;
-    width: 20cm;
-    margin-left: 2cm; 
-    margin-right: 2cm; 
+    width: auto;
+    padding-top: 0.5cm;
+    padding-left: 1cm;
     display: block;
     border: #ffa8ba;
-    border-radius: 3px;
+    border-radius: 10px;
+    object-fit: cover;
+    overflow: hidden;   
 }
 .aboutme {
     background-color: #00473e;
@@ -68,7 +70,7 @@
 }
 .project{
     padding-left: 2cm;
-    padding-top: 1cm;
+    padding-top: 2cm;
     padding-bottom: 1cm;
     background-color: #00473e;
 }
@@ -82,12 +84,28 @@
     font-family: "Monaco", monospace;
     color: #00473e;
     background-color: aliceblue;
-    padding-left: 1cm;
+    padding-left: 2cm;
     font-size: 15px;
 }
 .project .card-text{
     color: #00473e;
-
+}
+.project .card button{
+    color: #00473e;
+    font-weight: bold;
+    padding: 0.7em 1.7em;
+    font-size: 15px;
+    background: #faae2b;
+    border: 1px solid #faae2b;
+    border-radius: 20%;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #faae2b,
+                -6px -6px 12px #faae2b;
+}
+.project .card button{
+ color: #666;
+ box-shadow: inset 4px 4px 12px #faae2b,
+             inset -4px -4px 12px #ffffff;
 }
 .project p{
     font-size: 15px;
@@ -100,19 +118,95 @@
     background-color: #ffa8ba;
     padding-top: 2cm;
     padding-bottom: 2cm;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3ram;
+}
+.contact form div{
+    margin-bottom: 1,4rem;
 }
 .contact h1{
     font-weight: bold;
     font-size: 35px;
+    text-align: center;
+    padding-bottom: 10px;
 }
-.contact p{
+.contact .contact-left{
+    padding-left: 1cm;
+}
+.contact .contact-left input, textarea{
+    width: 100%;
+    padding: .75rem 1.3rem;
+    font-family: "Monaco", monospace;
+    background: #f2f7f5 ;
+    border: 1px solid #00473e;
+    border-radius: 7px;
+    resize: none;
+}
+.contact .contact-left .btn-submit{
+    color: #00473e;
+    font-weight: bold;
+    padding: 0.7em 1.7em;
+    font-size: 15px;
+    background: #faae2b;
+    border: 1px solid #faae2b;
+    border-radius: 20%;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #faae2b,
+                -6px -6px 12px #faae2b;
+}
+.contact .contact-left .btn-submit{
+ color: #666;
+ box-shadow: inset 4px 4px 12px #faae2b,
+             inset -4px -4px 12px #ffffff;
+}
+.contact .contact-rigth{
+    padding-left: 2cm;
     padding-top: 10px;
+}
+.contact .contact-rigth .contact-item-icon{
+    color: #00473e;
+}
+.contact .contact-rigth .contact-item-icon svg{
+    width: 50px;
+    height: 50;
+}
+.contact .contact-rigth .contact-item-icon h3, h5{
     font-size: 20px;
+    font-weight: bold;
+    font-family: "Monaco", monospace;
+    padding-top: 5px;
+}
+.connect p{
+    padding-top: 1.5cm;
+    font-size: 15px;
+    text-align: center;
     font-family: "Monaco", monospace;
 }
-.contact .row1{
-    text-align: center;
+.connect .contact-connect{
+    background-color: #f2f7f5;
+    padding-top: 1cm;
+}
+.connect .sosmed{
     padding-top: 2cm;
     padding-bottom: 2cm;
 }
+
+footer{
+    padding: 4rem 0;
+    background: #f2f7f5;
+    text-align: center;
+}
+.footer-icon{
+    margin-bottom: 1rem;
+}
+.footer-icon a{
+    margin: 0.5rem;
+}
+.footer-icon svg{
+    fill: #00473e;
+}
+.footer-icon a:hover svg{
+    fill: #000;
+}
+

@@ -6,10 +6,11 @@
     <title>Syafirna Miftahul Jannah Portofolio</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
 </head>
 <body>
 <!--Navbar-->
-<nav class="navbar navbar-expand-lg ">
+<nav class="navbar navbar-expand-lg fixed-top">
     <div class="container">
       <a class="navbar-brand col-4" href="#"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,7 +28,7 @@
             <a class="nav-link rounded" href="#project">Project</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link rounded" href="#container">Contact</a>
+            <a class="nav-link rounded" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
@@ -35,6 +36,7 @@
   </nav>
 
 <!--Home-->
+<section id="home">
 <section class="home">
     <div class="container">
         <div class="row">
@@ -58,12 +60,18 @@
         </div>
     </div>
     <div class="row">
-      <img src="Smjfirna/Portofolio/IMG_20230919_193058.jpg" alt="Deskripsi Gambar" class="full-foto">
+      <div class="col-1"></div>
+      <div class="col-8">
+      <img src="/image/IMG_20230919_193058.jpg" alt="Deskripsi Gambar" class="full-foto">
+      </div>
+      <div class="col-1"></div>
     </div>
+</section>
 </section>
 
 <!--About Me-->
-<section class="aboutme rounded">
+<section id="aboutme">
+<section class="aboutme">
     <div class="container py-5">
         <div class="row">
             <h1>WHO I AM ?</h1>
@@ -91,12 +99,14 @@
         </div>
     </div>
 </section>
+</section>
 
 <!--Personal Project-->
+<section id="project">
 <section class="project">
     <div class="container">
-        <div class="rprojectow">
-        <div class="col-4">
+        <div class="row">
+        <div class="personal-title col-3">
             <br>
           <h1>My Personal Project</h1>
           <br>
@@ -107,77 +117,91 @@
             obtained from public datasets.
           </p>
         </div>
-        <div class="col-8 p-3">
+        <div class="col-1"></div>
+        <div class="col-8">
         <div class="row">
           <div class="col-sm-10 py-3">
-            <div class="card p-3">
-              <div class="card-body py-3">
-                <h5 class="card-title">Diamond Price Prediction</h5>
-                <p class="card-text">
-                  Diammond price will predict eith three Machine Learning Regression
-                  algorithms as Linear regression, Decission Tree regression and Random
-                  Forest. 
-
-                  The data i got from Kaggle.com through this link :
-                  https://www.kaggle.com/datasets/nancyalaswad90/diamonds-prices
-                </p>
-                <input type="button" value="See More" class="button1" link="">
-              </div>
+           <div class="card p-3">
+            <div class="card-body py-3">
+              <h5 class="card-title">Diamond Price Prediction</h5><br>
+              <p class="card-text">
+                Diammond price will predict eith three Machine Learning Regression
+                algorithms as Linear regression, Decission Tree regression and Random
+                Forest. 
+              </p>
+              <a href="https://bisa.ai/portofolio/detail/Mjk4Ng" target="_blank">
+                <button>Details</button>
+              </a>
+              <a href="https://www.kaggle.com/datasets/nancyalaswad90/diamonds-prices" target="_blank">
+                <button>Dataset</button>
+              </a>
+            </div>
             </div>
           </div>
           <div class="col-sm-10 py-3">
             <div class="card p-3">
               <div class="card-body">
-                <h5 class="card-title">Mental Healt Chatbot with NLP</h5>
+                <h5 class="card-title">Mental Healt Chatbot with NLP</h5><br>
                 <p class="card-text">
                   This Chatbot i made with Capstone team, Chatbot will resphone
                   The chatbot is trained with a data set in the form of a collection 
                   of common questions about mental health and will provide responses 
                   to the questions given.
                 </p>
-                <input type="button" value="See More" class="button2">
+                <a href="https://bisa.ai/portofolio/detail/Mjk1Mg" target="_blank">
+                  <button>Details</button>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-sm-10 py-3">
             <div class="card p-3">
               <div class="card-body">
-                <h5 class="card-title">Sentiment Analyze on US Airlines</h5>
+                <h5 class="card-title">Sentiment Analyze on US Airlines</h5><br>
                 <p class="card-text">
                   This project will create a model that has been trained to classify 
-                  review data from US airlines users
-
-                  The dataset can be found at the following link:
-                  https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment
+                  review data from US airlines users.
                 </p>
-                <input type="button" value="See More" class="button3">
+                <a href="https://bisa.ai/portofolio/detail/MjkxMA" target="_blank">
+                  <button>Details</button>
+                </a>
+                <a href="https://www.kaggle.com/datasets/crowdflower/twitter-airline-sentiment" target="_blank">
+                  <button>Dataset</button>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-sm-10 py-3">
             <div class="card p-3">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <input type="button" value="See More" class="button3">
+                <h5 class="card-title">Mask detection model</h5><br>
+                <p class="card-text">
+                  Mask detection model to predict whether an image is wearing a mask
+                  or not using a mask and using it incorrectly.
+                </p>
+                <a href="https://bisa.ai/portofolio/detail/MjQ5Mw" target="_blank">
+                  <button>Details</button>
+                </a>
+                <a href="https://www.kaggle.com/datasets/vijaykumar1799/face-mask-detection" target="_blank">
+                  <button>Dataset</button>
+                </a>
               </div>
             </div>
           </div>
           <div class="col-sm-10 py-3">
             <div class="card p-3">
               <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <input type="button" value="See More" class="button3">
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-10 py-3">
-            <div class="card p-3">
-              <div class="card-body">
-                <h5 class="card-title">Special title treatment</h5>
-                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                <input type="button" value="See More" class="button3">
+                <h5 class="card-title">Car Price Prediction</h5><br>
+                <p class="card-text">
+                  Prediction of car prices is determined by the correlation of 
+                  each variable with the price variable.
+                </p>
+                <a href="https://bisa.ai/portofolio/detail/MjkzOQ" target="_blank">
+                  <button>Details</button>
+                </a>
+                <a href="https://archive.ics.uci.edu/dataset/10/automobile" target="_blank">
+                  <button>Dataset</button>
+                </a>
               </div>
             </div>
           </div>
@@ -186,42 +210,88 @@
       </div>
       </div>
 </section>
+</section>
 
-<!--Contact-->
+<!--Contact Email-->
+<section id="contact">
 <section class="contact">
     <div class="container">
         <div class="row">
-            <h1>
-                Contact Me On 
-            </h1>
-            <p>
-                I'm Ready to start an exciting journey,<br>
-                Let's connect for next survival
-            </p>
+            <h1> Contact Me On </h1>
         </div>
-        <br>
-        <div class="row1">
-            <div class="col-6 col-md-4"></div>
-            <div class="col-6 col-md-4">ikon</div>
-            <div class="col-6 col-md-4"></div>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-6 col-md-4"></div>
-            <div class="col-6 col-md-4">
-                <a href="https://www.linkedin.com/in/syafirnamiftahuljannah/" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
-                </a>
-                <a href="https://github.com/Smjfirna" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z"/></svg>
-                </a>
-                <a href="" target="_blank">
-                    <img src="" alt="Discord">
-                </a>
+        <div class="row contact-form">
+          <div class="col contact-left">
+            <form action="">
+              <div><br>
+                <input type="text" placeholder="Name" name="Name">
+              </div><br>
+              <div>
+                <input type="text" placeholder="Email" name="Email">
+              </div><br>
+              <div>
+                <textarea name="message" placeholder="Message" cols="30" rows="10"></textarea>
+              </div>
+              <div><br>
+                <button class="btn-submit">Send message</button>
+              </div>
+            </form>
+          </div>
+          <div class="col contact-rigth">
+            <div class="contact-item">
+              <div class="contact-item">
+                  <div class="contact-item"><br>
+                    <div class="contact-item-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 1c-3.148 0-6 2.553-6 5.702 0 3.148 2.602 6.907 6 12.298 3.398-5.391 6-9.15 6-12.298 0-3.149-2.851-5.702-6-5.702zm0 8c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2zm8 6h-3.135c-.385.641-.798 1.309-1.232 2h3.131l.5 1h-4.264l-.344.544-.289.456h.558l.858 2h-7.488l.858-2h.479l-.289-.456-.343-.544h-2.042l-1.011-1h2.42c-.435-.691-.848-1.359-1.232-2h-3.135l-4 8h24l-4-8zm-12.794 6h-3.97l1.764-3.528 1.516 1.528h1.549l-.859 2zm8.808-2h3.75l1 2h-3.892l-.858-2z"/></svg>
+                      <div><br>
+                      <h3>Address : Riau</h3>
+                      </div><br>
+                    </div>
+                    <div class="contact-item-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"/></svg>
+                    <div><br>
+                      <h3>Email : smj@gmail.com</h3>
+                    </div>
+                    </div><br>
+                    <div class="contact-item-icon">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm4.5 17.311l-1.76-3.397-1.032.505c-1.12.543-3.4-3.91-2.305-4.497l1.042-.513-1.747-3.409-1.053.52c-3.601 1.877 2.117 12.991 5.8 11.308l1.055-.517z"/></svg>
+                    <div><br>
+                      <h3>Whatsup : 08XX-XXXX-XXX</h3>
+                  </div>
+                </div>
+                </div>
+              </div>
             </div>
-            <div class="col-6 col-md-4"></div>
+          </div>
         </div>
-    </div>
+      </div>
+</section>
+</section>
+
+<!--Contact Connect-->
+<section class="connect">
+        <div class="row contact-connect">
+          <div>
+            <p>
+              ^3^ <br>
+              I'm Ready to start an exciting journey,<br>
+              Let's connect for next survival
+            </p>
+          </div>
+        </div>
+        <footer>
+          <div class="footer-icon">
+            <a href="https://www.linkedin.com/in/syafirnamiftahuljannah/">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm-2 8c0 .557-.447 1.008-1 1.008s-1-.45-1-1.008c0-.557.447-1.008 1-1.008s1 .452 1 1.008zm0 2h-2v6h2v-6zm3 0h-2v6h2v-2.861c0-1.722 2.002-1.881 2.002 0v2.861h1.998v-3.359c0-3.284-3.128-3.164-4-1.548v-1.093z"/></svg>
+            </a>
+            <a href="https://github.com/Smjfirna">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm2.218 18.616c-.354.069-.468-.149-.468-.336v-1.921c0-.653-.229-1.079-.481-1.296 1.56-.173 3.198-.765 3.198-3.454 0-.765-.273-1.389-.721-1.879.072-.177.312-.889-.069-1.853 0 0-.587-.188-1.923.717-.561-.154-1.159-.231-1.754-.234-.595.003-1.193.08-1.753.235-1.337-.905-1.925-.717-1.925-.717-.379.964-.14 1.676-.067 1.852-.448.49-.722 1.114-.722 1.879 0 2.682 1.634 3.282 3.189 3.459-.2.175-.381.483-.444.936-.4.179-1.413.488-2.037-.582 0 0-.37-.672-1.073-.722 0 0-.683-.009-.048.426 0 0 .46.215.777 1.024 0 0 .405 1.25 2.353.826v1.303c0 .185-.113.402-.462.337-2.782-.925-4.788-3.549-4.788-6.641 0-3.867 3.135-7 7-7s7 3.133 7 7c0 3.091-2.003 5.715-4.782 6.641z"/></svg>
+            </a>
+            <a href="">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10-10-4.486-10-10 4.486-10 10-10zm0-2c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm0 7.082c1.602 0 1.792.006 2.425.035 1.627.074 2.385.845 2.46 2.459.028.633.034.822.034 2.424s-.006 1.792-.034 2.424c-.075 1.613-.832 2.386-2.46 2.46-.633.028-.822.035-2.425.035-1.602 0-1.792-.006-2.424-.035-1.63-.075-2.385-.849-2.46-2.46-.028-.632-.035-.822-.035-2.424s.007-1.792.035-2.424c.074-1.615.832-2.386 2.46-2.46.632-.029.822-.034 2.424-.034zm0-1.082c-1.63 0-1.833.007-2.474.037-2.18.1-3.39 1.309-3.49 3.489-.029.641-.036.845-.036 2.474 0 1.63.007 1.834.036 2.474.1 2.179 1.31 3.39 3.49 3.49.641.029.844.036 2.474.036 1.63 0 1.834-.007 2.475-.036 2.176-.1 3.391-1.309 3.489-3.49.029-.64.036-.844.036-2.474 0-1.629-.007-1.833-.036-2.474-.098-2.177-1.309-3.39-3.489-3.489-.641-.03-.845-.037-2.475-.037zm0 2.919c-1.701 0-3.081 1.379-3.081 3.081s1.38 3.081 3.081 3.081 3.081-1.379 3.081-3.081c0-1.701-1.38-3.081-3.081-3.081zm0 5.081c-1.105 0-2-.895-2-2 0-1.104.895-2 2-2 1.104 0 2.001.895 2.001 2s-.897 2-2.001 2zm3.202-5.922c-.397 0-.72.322-.72.72 0 .397.322.72.72.72.398 0 .721-.322.721-.72 0-.398-.322-.72-.721-.72z"/></svg>
+            </a>
+          </div>
+          <p>&#169; 2023 - Made by Syafirna MJ</p>
+        </footer>
 </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
