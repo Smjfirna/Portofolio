@@ -31,6 +31,7 @@
     text-align: center;
     font-family: monospace;
     color: #00473e;
+    text-shadow: #faae2b;
 }
 .home p{
     text-align: center;
@@ -42,9 +43,11 @@
 .home .full-foto {
     height: 10cm;
     width: 20cm;
-    margin-left: 2cm; /* Tambahkan margin kiri sebanyak 2 cm */
-    margin-right: 2cm; /* Tambahkan margin kanan sebanyak 2 cm */
-    display: block; /* Penting untuk membuat margin berfungsi dengan benar */
+    margin-left: 2cm; 
+    margin-right: 2cm; 
+    display: block;
+    border: #ffa8ba;
+    border-radius: 3px;
 }
 .aboutme {
     background-color: #00473e;
