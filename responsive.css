@@ -1,6 +1,6 @@
 @media screen and (max-width: 1000px) {
     .home{
-        padding-top: 0.6cm;
+        padding-top: 2cm;
     }
     .home h1{
         font-size: 200px;
@@ -86,7 +86,7 @@
 
 @media screen and (max-width: 825px) {
     .home{
-        padding-top: 0.6cm;
+        padding-top: 1cm;
     }
     .home h1{
         font-size: 180px;
