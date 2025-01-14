@@ -3,10 +3,38 @@
     margin: 0;
     box-sizing: border-box;
 }
-
+/*Smoth scrolling*/
+html {
+    scroll-behavior: smooth;
+  } 
 .navbar {
     background-color: #f2f7f5;
     padding-top: 20px;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-weight: 600;
+  }
+  
+  p {
+    font-weight: 300;
+  }
+  .navbar {
+    background-color: #ffffff;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center; /* Untuk memusatkan item di navbar */
+    align-items: center;
+    width: 100%;
+}
+
+.navbar-nav .nav-item {
+    margin: 0 15px; /* Jarak antar item */
 }
 
 .nav-link {
@@ -15,7 +43,30 @@
     font-weight: 600;
     font-family: "Monaco", monospace;
     cursor: pointer;
-    margin-right: 20px;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: #f2f7f5;
+    background-color: #00473e;
+    border-radius: 5px; /* Menambahkan sedikit radius pada hover */
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler-icon {
+    background-color: #00473e;
+}
+ 
+.nav-link {
+    color: #00473e;
+    font-size: 1rem;
+    font-weight: 600;
+    font-family: "Monaco", monospace;
+    cursor: pointer;
+    
     text-decoration: none;
 }
 
@@ -23,34 +74,47 @@
     color: #f2f7f5;
     background-color: #00473e;
 }
-.home {
-    background-color: #f2f7f5;
-    padding-top: 1cm;
+.home-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Menutupi seluruh tinggi layar */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang keluar dari batas */
 }
-.home h1{
-    font-size: 200px;
-    text-align: center;
-    font-family: monospace;
-    color: #00473e;
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('Desain tanpa judul.png'); /* Gambar background */
+    background-size: cover; /* Menyesuaikan gambar untuk mengisi seluruh area */
+    background-position: center; /* Memposisikan gambar di tengah */
+    background-repeat: no-repeat; /* Mencegah gambar diulang */
+    filter: blur(8px); /* Efek blur pada gambar */
+    z-index: -1; /* Menempatkan gambar di bawah */
 }
-.home p{
-    text-align: center;
+
+.content {
+    position: absolute;
+    top: 50%; /* Menempatkan konten di tengah secara vertikal */
+    left: 50%; /* Menempatkan konten di tengah secara horizontal */
+    transform: translate(-50%, -50%); /* Penyempurnaan untuk benar-benar di tengah */
+    color: #ffffff; /* Warna teks putih agar kontras dengan gambar */
+    text-align: center; /* Menyusun teks di tengah */
+    z-index: 1; /* Menempatkan konten di atas gambar */
+}
+
+.home-title {
+    font-size: 3rem;
     font-weight: bold;
-    font-family: "Monaco", monospace;
-    color: #00473e;
-    font-size: 18px;
 }
-.home .full-foto {
-    height: 10cm;
-    width: auto;
-    padding-top: 0.5cm;
-    padding-left: 1cm;
-    display: block;
-    border: #ffa8ba;
-    border-radius: 10px;
-    object-fit: cover;
-    overflow: hidden;   
+
+.home-subtitle {
+    font-size: 1.5rem;
 }
+
+
 .aboutme {
     background-color: #00473e;
     padding-left: 2cm;
@@ -68,6 +132,147 @@
     margin-top: 10px;
     text-align: justify;
 }
+
+/* Styling untuk section Skills */
+#skills {
+    background-color: #f4f4f4; /* Background yang lembut */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+    margin-top: 70px;
+}
+
+/* Menata tombol skill */
+.skills-buttons {
+    display: flex;
+    justify-content: center; /* Membuat tombol berjejer di tengah */
+    gap: 20px; /* Jarak antar tombol */
+    flex-wrap: wrap; /* Membuat tombol bisa berpindah baris jika layar lebih kecil */
+}
+.skill-button {
+    background-color: #007bff; /* Warna tombol biru */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.skill-button:hover {
+    transform: scale(1.1); /* Efek zoom saat tombol di-hover */
+    background-color: #0056b3; /* Mengubah warna latar belakang saat hover */
+}
+
+.skill-button:focus {
+    outline: none; /* Menghilangkan outline */
+}
+/* Section untuk Certificates */
+#certificates {
+    background-color: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#certificates h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Container untuk menyusun card sertifikat */
+.certificates-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Styling untuk card sertifikat */
+/* Section untuk Certificates */
+#certificates {
+    background-color: #f4f4f4;;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#certificates h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Container untuk menyusun card sertifikat */
+.certificates-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Styling untuk card sertifikat */
+.certificate-card {
+    position: relative;
+    width: 250px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+/* Gambar dalam card tetap proporsional, mengisi card dengan object-fit */
+.certificate-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Memastikan gambar tetap terisi dengan proporsi yang baik */
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Efek blur dan overlay text */
+.certificate-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6); /* Latar belakang hitam transparan */
+    opacity: 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+    backdrop-filter: blur(10px); /* Efek blur */
+}
+
+/* Menambahkan efek hover */
+.certificate-card:hover .certificate-img {
+    transform: scale(1.05); /* Membesarkan gambar saat hover */
+}
+
+.certificate-card:hover .certificate-overlay {
+    opacity: 1; /* Menampilkan overlay dengan nama sertifikat saat hover */
+}
+
+/* Responsif untuk tampilan lebih kecil */
+@media (max-width: 768px) {
+    .certificates-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+/*Bagian Project */
 .project{
     padding-left: 2cm;
     padding-top: 2cm;
@@ -80,11 +285,53 @@
     font-weight: bold;
     padding-right: 10px;
 }
+.custom-card {
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.custom-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items to the start (top) */
+    text-align: center;          /* Center the title */
+    height: 100%;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    text-align: center;          /* Center the title */
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    text-align: justify;         /* Justify the text */
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-start; /* Align the buttons to the left */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+}
 .project .card{
     font-family: "Monaco", monospace;
     color: #00473e;
     background-color: aliceblue;
-    padding-left: 2cm;
+    padding-left: 0.5cm;
     font-size: 15px;
 }
 .project .card-text{
@@ -197,16 +444,24 @@ footer{
     background: #f2f7f5;
     text-align: center;
 }
-.footer-icon{
-    margin-bottom: 1rem;
+.footer-icon {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
 }
-.footer-icon a{
-    margin: 0.5rem;
+
+.footer-icon a {
+    color: white;
+    text-decoration: none;
 }
-.footer-icon svg{
-    fill: #00473e;
+
+.footer-icon svg {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s;
 }
-.footer-icon a:hover svg{
-    fill: #000;
+
+.footer-icon svg:hover {
+    transform: scale(1.2);
 }
 
