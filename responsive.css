@@ -1,263 +1,93 @@
+/* Media Queries */
+
+/* For screens that are 1000px or less */
 @media screen and (max-width: 1000px) {
-    .home{
+    .home {
         padding-top: 2cm;
     }
-    .home h1{
-        font-size: 200px;
-        text-align: center;
-        font-family: monospace;
-        color: #00473e;
+    .home h1 {
+        font-size: 70px; /* Lebih kecil dari ukuran default */
     }
-    .home p{
-        text-align: center;
-        font-weight: bold;
-        font-family: "Monaco", monospace;
-        color: #00473e;
-        font-size: 15px;
+    .home p {
+        font-size: 12px; /* Menyesuaikan ukuran font */
     }
     .home .full-foto {
         height: 5cm;
-        width: auto;
-        padding-top: 0.5cm;
-        display: block;
-        border: #ffa8ba;
-        border-radius: 10px;
-        object-fit: cover;
-        overflow: hidden;   
+        width: 100%; /* Membuat gambar lebih fleksibel */
     }
-    .home h1{
-        font-size: 100px;
-        text-align: center;
-        font-family: monospace;
-        color: #00473e;
+    .aboutme p {
+        font-size: 12px; /* Mengurangi ukuran font */
     }
-    .home p{
-        text-align: center;
-        font-weight: bold;
-        font-family: "Monaco", monospace;
-        color: #00473e;
-        font-size: 14px;
-    }
-    .aboutme p{
-        color: #f2f7f5;
-        font-family: "Monaco", monospace;
-        font-size: 13px;
-        margin-top: 6px;
-        text-align: justify;
-    }
-    .project{
+    .project {
         padding-left: 1cm;
-        padding-top: 1cm;
-        padding-bottom: 1cm;
-        background-color: #00473e;
     }
-    .project h1{
-        font-size: 30px;
-        color: #f2f7f5;
-        font-weight: bold;
-        padding-right: 5px;
-        padding-left: 5px;
+    .project h1 {
+        font-size: 24px; /* Mengurangi ukuran font heading */
     }
-    .project .card button{
-        color: #00473e;
-        font-weight: bold;
-        padding: 0.5em 0.7em;
-        font-size: 15px;
-        background: #faae2b;
-        border: 1px solid #faae2b;
-        border-radius: 20%;
-        transition: all .3s;
-        box-shadow: 6px 6px 12px #faae2b,
-                    -6px -6px 12px #faae2b;
+    .project .card {
+        font-size: 14px; /* Mengurangi ukuran font dalam card */
+        width: 90%; /* Mengurangi lebar card */
     }
-    .project .card button{
-     color: #666;
-     box-shadow: inset 4px 4px 12px #faae2b,
-                 inset -4px -4px 12px #ffffff;
-    }
-    .project p{
-        font-size: 12px;
-        font-family: "Monaco", monospace;
-        color: #f2f7f5;
-        text-align: justify;
-        padding-right: 10px;
+    .project .card button {
+        font-size: 14px; /* Menyesuaikan ukuran button */
     }
 }
 
+/* For screens that are 825px or less */
 @media screen and (max-width: 825px) {
-    .home{
-        padding-top: 1cm;
+    .home h1 {
+        font-size: 40px; /* Lebih kecil */
     }
-    .home h1{
-        font-size: 180px;
-        text-align: center;
-        font-family: monospace;
-        color: #00473e;
-    }
-    .home p{
-        text-align: center;
-        font-weight: bold;
-        font-family: "Monaco", monospace;
-        color: #00473e;
-        font-size: 18px;
+    .home p {
+        font-size: 12px; /* Ukuran font lebih kecil */
     }
     .home .full-foto {
-        height: 7cm;
-        width: auto;
-        padding-top: 0.5cm;
-        display: block;
-        border: #ffa8ba;
-        border-radius: 10px;
-        object-fit: cover;
-        overflow: hidden;   
+        height: 6cm; /* Mengatur ulang ukuran gambar */
+        width: 100%; /* Membuat gambar lebih fleksibel */
     }
 }
 
+/* For screens that are 760px or less */
 @media screen and (max-width: 760px) {
-    .home h1{
-        font-size: 80px;
-        text-align: center;
-        font-family: monospace;
-        color: #00473e;
+    .home h1 {
+        font-size: 20px; /* Menyesuaikan ukuran font */
     }
-    .home p{
-        text-align: center;
-        font-weight: bold;
-        font-family: "Monaco", monospace;
-        color: #00473e;
-        font-size: 10px;
+    .home p {
+        font-size: 10px; /* Ukuran font lebih kecil */
     }
     .home .full-foto {
         height: 3cm;
-        width: 9cm;
-        padding-top: 0.5cm;
-        display: block;
-        border: #ffa8ba;
-        border-radius: 10px;
-        overflow: hidden;  
+        width: 100%; /* Mengatur ulang lebar gambar */
     }
-    .aboutme {
-        background-color: #00473e;
-        padding-left: 0.8cm;
-        padding-top: 1cm;
+    .aboutme h1 {
+        font-size: 22px; /* Mengurangi ukuran font heading */
     }
-    .aboutme h1{
-        font-size: 27px;
-        font-weight: bold;
-        color: #f2f7f5;
+    .aboutme p {
+        font-size: 9px; /* Menyesuaikan ukuran font */
     }
-    .aboutme p{
-        color: #f2f7f5;
-        font-family: "Monaco", monospace;
-        font-size: 10px;
-        margin-top: 10px;
-        text-align: justify;
+    .project h1 {
+        font-size: 20px; /* Menyesuaikan ukuran font */
     }
-    .project{
-        padding-left: 0.5cm;
-        padding-top: 1cm;
-        padding-bottom: 1cm;
-        background-color: #00473e;
+    .project .card {
+        font-size: 13px; /* Mengurangi ukuran font dalam card */
+        width: 100%; /* Membuat card pas di layar */
+        margin-bottom: 10px; /* Memberikan ruang antara card */
     }
-    .project h1{
-        font-size: 26px;
-        color: #f2f7f5;
-        font-weight: bold;
-        padding-right: 10px;
+    .project .card button {
+        font-size: 12px; /* Ukuran font button lebih kecil */
     }
-    .project .card{
-        font-family: "Monaco", monospace;
-        color: #00473e;
-        background-color: aliceblue;
-        padding-left: 0.5cm;
-        padding-right: 1cm;
-        font-size: 15px;
+    .project p {
+        font-size: 10px; /* Mengurangi ukuran font deskripsi */
     }
-    .project .card-text{
-        color: #00473e;
-    }
-    .project .card button{
-        color: #00473e;
-        font-weight: bold;
-        padding: 0.3em 0.6em;
-        font-size: 12px;
-        background: #faae2b;
-        border: 1px solid #faae2b;
-        border-radius: 20%;
-        transition: all .3s;
-        box-shadow: 6px 6px 12px #faae2b,
-                    -6px -6px 12px #faae2b;
-    }
-    .project .card button{
-     color: #666;
-     box-shadow: inset 4px 4px 12px #faae2b,
-                 inset -4px -4px 12px #ffffff;
-    }
-    .project p{
-        font-size: 12px;
-        font-family: "Monaco", monospace;
-        color: #f2f7f5;
-        text-align: justify;
-        padding-right: 10px;
-    }
-    .project .row {
-        flex-direction: row;
-    }
-    .project .col-3, .col-8 {
-        flex: 0 0 92%; /* Lebar 100% untuk elemen ini */
-    }
-    .contact{
-        background-color: #ffa8ba;
-        padding-top: 1cm;
-        padding-bottom: 2cm;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-        gap: 3ram;
-    }
-    .contact h1{
-        font-weight: bold;
-        font-size: 35px;
-        text-align: center;
-        padding-bottom: 10px;
-    }
-    .contact .contact-left{
-        padding-left: 1cm;
-    }
-    .contact .contact-left input, textarea{
+    .contact .contact-left input, .contact .contact-left textarea {
         width: 90%;
-        padding: .75rem 1.7rem;
-        font-family: "Monaco", monospace;
-        background: #f2f7f5 ;
-        border: 1px solid #00473e;
-        border-radius: 7px;
-        resize: none;
     }
-    .contact .contact-left .btn-submit{
-        color: #00473e;
-        font-weight: bold;
-        padding: 0.7em 1.6em;
-        font-size: 15px;
-        background: #faae2b;
-        border: 1px solid #faae2b;
-        border-radius: 20%;
-        transition: all .3s;
-        box-shadow: 6px 6px 12px #faae2b,
-                    -6px -6px 12px #faae2b;
+    .connect p {
+        font-size: 8px; /* Ukuran font lebih kecil */
     }
-    .contact .contact-left .btn-submit{
-     color: #666;
-     box-shadow: inset 4px 4px 12px #faae2b,
-                 inset -4px -4px 12px #ffffff;
-    }
-    .connect p{
-        padding-top: 1cm;
-        font-size: 8px;
-        text-align: center;
-        font-family: "Monaco", monospace;
-    }
-    .connect .sosmed{
+    .connect .sosmed {
         padding-top: 1cm;
         padding-bottom: 1cm;
     }
-
 }
+
